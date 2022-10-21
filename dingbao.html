@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
     <style type = "text/css">
         body{
             margin: 0;
@@ -13,10 +13,12 @@
         }
     </style>
     <title>xiaoxiaole</title>
+    
 </head>
 <body>
-    <script src = "./js/jquery-3.6.0.min.js"></script>
-    <script src = "./js/phaser.min.js"></script>  
+    <script src = "http://game.wangkang.fun/js/jquery-3.6.0.min.js"></script>
+    <script src = "http://game.wangkang.fun/js/phaser.min.js"></script>
+    
     <script type = "text/javascript">
         //定义所需的参数
         let game;
@@ -49,7 +51,7 @@
                     this.drawLoadingProgress();
                     this.alreadyLoad = true;
                 }
-                this.load.spritesheet('sprite', './assets/marchandmiss/sprite.png', {//frameWidth这是为了对png进行切片
+                this.load.spritesheet('sprite', 'https://github.com/qbz0808/testformybaby/assets/marchandmiss/123.png', {//frameWidth这是为了对png进行切片
                     frameWidth: gameOptions.iconW,
                     frameHeight: gameOptions.iconH
                 })
